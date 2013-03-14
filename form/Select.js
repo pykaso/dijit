@@ -366,6 +366,7 @@ define([
 			//		Overridden so that the state will be cleared.
 			this.inherited(arguments);
 			Tooltip.hide(this.domNode);
+			this._loadChildren(true); // reset selected children
 			this._refreshState();	// to update this.state
 		},
 
